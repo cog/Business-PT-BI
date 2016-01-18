@@ -9,11 +9,11 @@ Business::PT::BI - Validate Portuguese BI (Bilhete de Identidade)
 
 =head1 VERSION
 
-Version 0.01
+Version 0.02
 
 =cut
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 require Exporter;
 

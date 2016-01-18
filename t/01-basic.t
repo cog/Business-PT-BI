@@ -1,13 +1,15 @@
 #!perl -T
 
-use Test::More tests => 14;
+use Test::More tests => 16;
 
 BEGIN {
 	use_ok( 'Business::PT::BI', 'valid_bi' );
 }
 
 is( valid_bi(), undef );
+is( valid_bi(1234567), undef );
 is( valid_bi(12345678), undef );
+is( valid_bi(1234567, 1), undef );
 
 ok( ! valid_bi(12345678, 0) );
 ok( ! valid_bi(12345678, 1) );
